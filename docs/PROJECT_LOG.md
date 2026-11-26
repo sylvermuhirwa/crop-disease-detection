@@ -44,3 +44,31 @@
 
 ## Limitations so far
 - Label noise, single-country data (Uganda), no severity grading, no field trial.
+
+## Run 3: balanced sampling + label smoothing (12 epochs, ~145 s/epoch)
+- Changes vs Run 2: sqrt-inverse-frequency WeightedRandomSampler and label smoothing 0.1.
+- Best epoch (7), validation: accuracy 0.860, macro-F1 0.760.
+- Recall: CBB 0.570, CBSD 0.763, CGM 0.757, CMD 0.935, Healthy 0.770.
+- Diseased leaves called Healthy: 6.6% (Run 2: 5.4%).
+- Finding: the rare-disease fix helped CBB (about 6 more leaves of 107) but cost recall
+  on CMD and raised the dangerous mistake. The macro-F1 difference (0.008) is inside
+  the epoch-to-epoch noise (validation macro-F1 moved between 0.72 and 0.76 within a run).
+- Both runs overfit: training accuracy ~0.91 vs validation ~0.86.
+
+## Averaging Run 2 and Run 3 (validation set)
+- Accuracy 0.869, macro-F1 0.765, diseased called Healthy 5.8%.
+- Gain over the single models is small (about 11 photos of 2,137) and it doubles the
+  model size and phone inference time.
+- Decision: the app will use ONE model, not an ensemble.
+
+## Evaluation data
+- results/eval_data.npz holds both models' probabilities for the validation and
+  test sets (saved without printing test scores).
+- The test set is sealed. It will be used once, at the end, to report final numbers.
+
+## Decisions and next steps
+- Keep EfficientNet-B0 (about 16 MB, suits low-end phones).
+- Optional experiments if time remains after the app works: MobileNetV3-Large at 256px,
+  EfficientNet-B0 at 384px.
+- Next: design a "retake the photo" rule on the validation set (confidence threshold,
+  stricter for the Healthy answer), then check it once on the test set.
