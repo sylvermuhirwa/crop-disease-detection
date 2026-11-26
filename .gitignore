@@ -1,0 +1,17 @@
+# Virtual environment and Python cache
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets: never commit these
+kaggle.json
+.env
+
+# Large data (users download it from Kaggle themselves)
+data/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
