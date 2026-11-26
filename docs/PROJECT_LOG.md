@@ -72,3 +72,18 @@
   EfficientNet-B0 at 384px.
 - Next: design a "retake the photo" rule on the validation set (confidence threshold,
   stricter for the Healthy answer), then check it once on the test set.
+
+  
+## Guardrail design and calibration (validation set only)
+- Temperature scaling fitted on validation: Run 2 T=1.5 (was overconfident),
+  Run 3 T=0.8 (underconfident, due to label smoothing), average T=0.9.
+- Calibration error (ECE): Run 2 5.1% -> 1.5%, Run 3 6.6% -> 1.7%, average 2.8% -> 1.6%.
+- "Healthy only if confidence >= 0.90" rule, calibrated, general threshold 0:
+  Run 2: sick leaves called Healthy 5.4% -> 0.3%, photos answered 88.5%, accuracy of answers 89.7%.
+  Run 3: 6.6% -> 1.1%. Average: 5.8% -> 0.6%.
+- Run 2 had the fewest dangerous mistakes at every Healthy level tested (0.70-0.95).
+  The gap is about 15 leaves of ~1,880 and could be partly noise.
+- DECISION: the app uses Run 2 alone (EfficientNet-B0, ~16 MB, T=1.5).
+  Rule: answer "Healthy" only at >= 0.90 calibrated confidence; any answer below 0.50 asks for a retake.
+- Caveat: thresholds were chosen on the validation set. Final numbers will come from
+  one evaluation on the sealed test set.
