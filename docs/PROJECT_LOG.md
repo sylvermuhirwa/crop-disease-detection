@@ -112,3 +112,25 @@
   called Healthy; 0.80 -> 91.0%, 0.7%; 0.90 -> 88.5%, 0.3%.
 - The final threshold is fixed before the single test-set check.
 
+
+## Thresholds (validation set, Run 2 calibrated, T=1.5)
+- "Not sure" below 0.60 confidence; "Healthy" needs at least 0.80.
+- On validation: 82.4% of photos get a confident answer, 92.7% of those are correct
+  (about 6 wrong confident answers per 100 photos), and 0.7% of sick leaves get a confident "Healthy".
+- Chosen as a trade-off between wrong answers and "not sure" results. Not yet checked on real phone photos
+  or on the sealed test set.
+
+## Inference engine and app
+- app/engine.py: quality check -> ONNX prediction -> calibration -> decision
+  (retake / not sure / cannot confirm healthy / confident), plus Grad-CAM on request.
+- app/streamlit_app.py: upload or camera, result, advice, heatmap checkbox, English/Kinyarwanda switch.
+- All screen texts and advice are in app/i18n_en.json and app/i18n_rw.json.
+- Advice written from published sources (IITA, journal papers, extension factsheets); the sources are listed in
+  app/advice.json. No reliable management advice was found for Cassava Green Mottle (CGM), so the app says it is
+  not sure of the cause and sends the farmer to an extension officer.
+- Kinyarwanda translation by the author (native speaker). Not yet reviewed by an agronomist or extension officer.
+
+## Informal app checks
+- Two photos from outside the dataset (one stock photo with a watermark) ran through the app in both languages.
+  Results were not evaluated, only checked that the app works.
+- Known gap: the model has only 5 classes, so it cannot say "other disease" or "not a cassava leaf".
