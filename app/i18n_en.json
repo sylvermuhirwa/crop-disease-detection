@@ -1,0 +1,101 @@
+{
+  "ui": {
+    "app_title": "Cassava Leaf Check",
+    "app_subtitle": "Take or upload a photo of one cassava leaf to get a first check.",
+    "language": "Language",
+    "upload": "Upload a photo",
+    "camera": "Or take a photo",
+    "no_photo": "Please add a photo to start.",
+    "checking": "Checking the photo...",
+    "your_photo": "Your photo",
+    "result": "Result",
+    "confidence": "Confidence",
+    "what_to_do": "What to do now",
+    "get_help": "When to get help",
+    "where_looked": "Where the app looked",
+    "heatmap_note": "The red and yellow areas are where the app looked most. This is only a guide.",
+    "photo_problem": "Problem with the photo",
+    "tips_title": "Tips for a good photo",
+    "footer": "This is a research prototype. It has not been tested with farmers."
+  },
+  "advice": {
+    "disclaimer": "This app gives a first guess. It can be wrong. It does not replace an extension officer or an expert.",
+    "classes": {
+      "CBB": {
+        "name": "Cassava Bacterial Blight (CBB)",
+        "what_it_is": "A bacterial disease. Leaves get angular spots that look wet, then wilt and dry. Stems can die back. It spreads through infected cuttings, rain splash and dirty tools.",
+        "do_now": [
+          "Take cuttings only from healthy plants, from the older part of the stem.",
+          "Wash and disinfect your cutting tools between plants. Ask your extension officer for a low-cost way.",
+          "After harvest, gather the stems and leaves of sick plants and burn or bury them. Do not leave them in the field.",
+          "Keep people and animals out of the affected part of the field.",
+          "Ask your extension officer about planting another crop before cassava again."
+        ],
+        "get_help": "Contact your extension officer if many plants show these signs."
+      },
+      "CBSD": {
+        "name": "Cassava Brown Streak Disease (CBSD)",
+        "what_it_is": "A virus disease. Leaves can turn yellow along the veins, and stems may show brown streaks. The roots can rot inside even when the plant looks fine. It spreads by whiteflies and by planting cuttings from sick plants. It can cut the root harvest by a lot.",
+        "do_now": [
+          "Do not take cuttings from plants that show these signs.",
+          "Use clean cuttings from healthy plants, or from a trusted source such as your extension officer.",
+          "Ask your extension officer about cassava varieties that tolerate this disease.",
+          "The roots may be damaged inside. Ask your extension officer how to check them before harvest.",
+          "Tell your neighbours. Controlling the disease works better when farmers act together."
+        ],
+        "get_help": "Contact your extension officer soon. This disease can spread fast."
+      },
+      "CGM": {
+        "name": "Cassava Green Mottle (CGM)",
+        "what_it_is": "This photo looks like examples labelled Cassava Green Mottle in our training data. We are not sure about the cause of this problem, so we cannot give detailed advice.",
+        "do_now": [
+          "Show the plant to your extension officer, who can confirm what it is.",
+          "Do not spray anything before you get advice.",
+          "As a precaution, do not take cuttings from plants that show these signs."
+        ],
+        "get_help": "Please contact your extension officer."
+      },
+      "CMD": {
+        "name": "Cassava Mosaic Disease (CMD)",
+        "what_it_is": "A virus disease. Leaves show yellow-green patches and may twist or stay small. It spreads by whiteflies and by planting cuttings from sick plants.",
+        "do_now": [
+          "Do not take cuttings from plants that show these signs.",
+          "Use clean cuttings from healthy plants, or from a trusted source such as your extension officer.",
+          "Ask your extension officer which plants to remove and which varieties resist this disease.",
+          "Tell your neighbours. Controlling the disease works better when farmers act together."
+        ],
+        "get_help": "If many plants in your field show these signs, contact your extension officer soon."
+      },
+      "Healthy": {
+        "name": "Healthy",
+        "what_it_is": "No clear sign of the diseases we check was found in this photo.",
+        "do_now": [
+          "This is only one photo. Check other leaves and plants too, especially the young leaves.",
+          "Take cuttings only from plants with no signs of disease.",
+          "Check your plants regularly so you can act early."
+        ],
+        "get_help": "If you still see yellow patches, spots or streaks, take another photo or ask your extension officer."
+      }
+    },
+    "uncertain": {
+      "title": "Not sure",
+      "body": "The app is not sure about this photo. The most likely result is {label}, but please do not rely on it.",
+      "healthy_body": "The app cannot confirm that this plant is healthy.",
+      "do_now": [
+        "Take a new, clear photo of one leaf.",
+        "If the plant looks sick, show it to your extension officer."
+      ]
+    },
+    "retake": {
+      "title": "Please retake the photo",
+      "blurry": "The photo is blurry. Hold the phone steady and wait for the picture to be sharp.",
+      "too_dark": "The photo is too dark. Take it in daylight.",
+      "too_bright": "The photo is too bright. Move out of strong sunlight or glare.",
+      "tips": [
+        "Take the photo in daylight.",
+        "Put one leaf in the middle of the photo.",
+        "Hold the phone steady and come close enough to see the leaf clearly."
+      ]
+    }
+  }
+}

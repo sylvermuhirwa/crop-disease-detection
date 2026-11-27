@@ -1,0 +1,101 @@
+{
+  "ui": {
+    "app_title": "Gusuzuma Ikibabi cy'Imyumbati",
+    "app_subtitle": "Fata cyangwa ushyiremo ifoto y'ikibabi kimwe cy'imyumbati kugira ngo ubone isuzuma rya mbere.",
+    "language": "Ururimi",
+    "upload": "Shyiramo ifoto",
+    "camera": "Cyangwa fata ifoto",
+    "no_photo": "Nyamuneka shyiramo ifoto kugira ngo utangire.",
+    "checking": "Turimo gusuzuma ifoto...",
+    "your_photo": "Ifoto yawe",
+    "result": "Ibisubizo",
+    "confidence": "Icyizere cy'ibisubizo",
+    "what_to_do": "Icyo ukwiye gukora ubu",
+    "get_help": "Igihe wakwiyambaza ubufasha",
+    "where_looked": "Aho porogaramu yibanze",
+    "heatmap_note": "Ahatukura n'ahari umuhondo ni ho porogaramu yibanze cyane. Ibi ni ukugufasha gusa.",
+    "photo_problem": "Ikibazo ku ifoto",
+    "tips_title": "Inama zo gufata ifoto nziza",
+    "footer": "Iyi ni porogaramu y'igeragezwa mu bushakashatsi. Ntirageragezwa hamwe n'abahinzi."
+  },
+  "advice": {
+    "disclaimer": "Iyi porogaramu itanga igitekerezo cya mbere. Ishobora kwibeshya. Ntisimbura umujyanama w'ubuhinzi cyangwa inzobere.",
+    "classes": {
+      "CBB": {
+        "name": "Indwara yo Kubora Utwanda tw'Imyumbati (CBB)",
+        "what_it_is": "Ni indwara iterwa na bagiteri. Amababi azana utudomo dufite impande nyinshi dusa n'udutose, hanyuma akuma agahungabana. Amashami ashobora kuma agapfa. Ikwirakwizwa n'imbuto zanduye, amazi y'imvura asimbuka, n'ibikoresho byanduye.",
+        "do_now": [
+          "Fata imbuto ku myumbati mizima gusa, ku gice gikuze cy'igiti.",
+          "Karaba kandi wicishe udukoko ibikoresho byo gutema hagati y'igiti n'ikindi. Baza umujyanama w'ubuhinzi uburyo buhendutse wabikoramo.",
+          "Nyuma yo gusarura, kusanya amashami n'amababi by'imyumbati irwaye ubishye cyangwa ubishyingure. Ntibisige mu murima.",
+          "Irinda abantu n'amatungo kwinjira mu gice cy'umurima cyafashwe.",
+          "Baza umujyanama w'ubuhinzi niba wahinga ikindi gihingwa mbere yo kongera guhinga imyumbati."
+        ],
+        "get_help": "Vugana n'umujyanama w'ubuhinzi niba imyumbati myinshi igaragaza ibi bimenyetso."
+      },
+      "CBSD": {
+        "name": "Indwara y'Imirongo y'Ikijuju mu Myumbati (CBSD)",
+        "what_it_is": "Ni indwara iterwa na virusi. Amababi ashobora guhinduka umuhondo ku mishino yayo, kandi amashami akagaragaza imirongo y'ikijuju. Imizi ishobora kubora imbere nubwo igiti cyaba kimeze neza. Ikwirakwizwa n'isazi yera kandi no guhinga imbuto zivuye ku giti kirwaye. Ishobora kugabanya cyane umusaruro w'imizi.",
+        "do_now": [
+          "Ntugafate imbuto ku myumbati igaragaza ibi bimenyetso.",
+          "Koresha imbuto nzima zivuye ku myumbati mizima, cyangwa uzikure ku muntu wizewe nk'umujyanama w'ubuhinzi.",
+          "Baza umujyanama w'ubuhinzi ibyatsi by'imyumbati byihanganira iyi ndwara.",
+          "Imizi ishobora kuba yangiritse imbere. Baza umujyanama w'ubuhinzi uko wayisuzuma mbere yo gusarura.",
+          "Bwira abaturanyi bawe. Kurwanya iyi ndwara bigenda neza iyo abahinzi bafatanyije."
+        ],
+        "get_help": "Vugana vuba n'umujyanama w'ubuhinzi. Iyi ndwara ishobora gukwirakwira vuba."
+      },
+      "CGM": {
+        "name": "Indwara y'Utudomo tw'Icyatsi ku Myumbati (CGM)",
+        "what_it_is": "Iyi foto isa n'ingero zanditsweho Cassava Green Mottle mu makuru yifashishijwe kwigisha porogaramu. Ntituramenya neza icyateye iki kibazo, rero ntitwashobora gutanga inama zambuye.",
+        "do_now": [
+          "Ereka umujyanama w'ubuhinzi uwo mumbati kugira ngo yemeze icyo ari cyo.",
+          "Ntugire umuti utera utarabanza kugira inama aguha.",
+          "Nk'ubwirinzi, ntugafate imbuto ku myumbati igaragaza ibi bimenyetso."
+        ],
+        "get_help": "Nyamuneka vugana n'umujyanama w'ubuhinzi."
+      },
+      "CMD": {
+        "name": "Indwara y'Ubukonge bw'Imyumbati (CMD)",
+        "what_it_is": "Ni indwara iterwa na virusi. Amababi agaragaza utudomo tw'umuhondo n'icyatsi kandi ashobora kwipfundika cyangwa akaguma ari mato. Ikwirakwizwa n'isazi yera kandi no guhinga imbuto zivuye ku giti kirwaye.",
+        "do_now": [
+          "Ntugafate imbuto ku myumbati igaragaza ibi bimenyetso.",
+          "Koresha imbuto nzima zivuye ku myumbati mizima, cyangwa uzikure ku muntu wizewe nk'umujyanama w'ubuhinzi.",
+          "Baza umujyanama w'ubuhinzi imyumbati yo kurandura n'ibyatsi byihanganira iyi ndwara.",
+          "Bwira abaturanyi bawe. Kurwanya iyi ndwara bigenda neza iyo abahinzi bafatanyije."
+        ],
+        "get_help": "Niba imyumbati myinshi mu murima wawe igaragaza ibi bimenyetso, vugana vuba n'umujyanama w'ubuhinzi."
+      },
+      "Healthy": {
+        "name": "Nzima",
+        "what_it_is": "Nta kimenyetso kigaragara cy'indwara dusuzuma cyabonetse muri iyi foto.",
+        "do_now": [
+          "Iyi ni ifoto imwe gusa. Suzuma n'andi mababi n'indi myumbati, cyane cyane amababi mashya.",
+          "Fata imbuto ku myumbati idafite ibimenyetso by'indwara gusa.",
+          "Suzuma imyumbati yawe buri gihe kugira ngo ufashe ingamba hakiri kare."
+        ],
+        "get_help": "Niba ukibona utudomo tw'umuhondo, amabara cyangwa imirongo, fata indi foto cyangwa ubaze umujyanama w'ubuhinzi."
+      }
+    },
+    "uncertain": {
+      "title": "Ntabwo byizewe",
+      "body": "Porogaramu ntiyizeye neza iyi foto. Igishoboka cyane ni {label}, ariko nyamuneka ntukishingikirizeho cyane.",
+      "healthy_body": "Porogaramu ntishobora kwemeza ko uyu mumbati uri muzima.",
+      "do_now": [
+        "Fata indi foto nshya kandi igaragara neza y'ikibabi kimwe.",
+        "Niba umumbati usa n'urwaye, uwereke umujyanama w'ubuhinzi."
+      ]
+    },
+    "retake": {
+      "title": "Nyamuneka subira ufate ifoto",
+      "blurry": "Ifoto irimo urujijo. Fata telefone utayinyeganyeza kandi utegereze ko ifoto iba nziza.",
+      "too_dark": "Ifoto ifite umwijima cyane. Yifate ku manywa.",
+      "too_bright": "Ifoto ifite urumuri rwinshi cyane. Va ku zuba rikaze cyangwa ahabengerana.",
+      "tips": [
+        "Fata ifoto ku manywa.",
+        "Shyira ikibabi kimwe hagati mu ifoto.",
+        "Fata telefone utayinyeganyeza kandi wegereze bihagije kugira ngo ikibabi kigaragare neza."
+      ]
+    }
+  }
+}
