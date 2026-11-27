@@ -87,3 +87,28 @@
   Rule: answer "Healthy" only at >= 0.90 calibrated confidence; any answer below 0.50 asks for a retake.
 - Caveat: thresholds were chosen on the validation set. Final numbers will come from
   one evaluation on the sealed test set.
+
+  
+## ONNX export (Run 2)
+- Run 2 (EfficientNet-B0) exported to ONNX: 16.0 MB, variable batch size.
+- PyTorch vs ONNX Runtime: largest score difference 0.000003, same predicted classes.
+- CPU speed on my laptop (i7-1255U): median 18 ms per photo, slowest 90 ms.
+  Not measured on a phone, so no phone speed is claimed.
+
+## Grad-CAM (14 validation photos, qualitative only)
+- Grad-CAM on the last feature maps (8x8 grid stretched to 256x256).
+- Confident correct disease predictions mostly highlight discoloured leaf areas.
+  Uncertain predictions (about 50% or less) show diffuse or off-leaf attention.
+- One photo labelled Healthy shows a clearly yellow leaf (model: CBB 50%): possible label noise or ambiguity.
+- Limits: coarse resolution; shows where the model looked, not proof it is right;
+  14 hand-picked photos only; the model may also use background cues (not tested).
+
+## App design decisions
+- Three answer levels: (1) confident diagnosis with advice; (2) "probably X, not sure,
+  retake the photo or ask an extension officer"; (3) "retake the photo" (very low
+  confidence or blurry image).
+- "Healthy" needs calibrated confidence >= 0.80 by default, adjustable.
+  Trade-off on validation (Run 2, calibrated): 0.70 -> 92.9% photos answered, 1.5% sick leaves
+  called Healthy; 0.80 -> 91.0%, 0.7%; 0.90 -> 88.5%, 0.3%.
+- The final threshold is fixed before the single test-set check.
+
