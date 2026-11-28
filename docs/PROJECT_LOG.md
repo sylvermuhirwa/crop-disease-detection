@@ -134,3 +134,16 @@
 - Two photos from outside the dataset (one stock photo with a watermark) ran through the app in both languages.
   Results were not evaluated, only checked that the app works.
 - Known gap: the model has only 5 classes, so it cannot say "other disease" or "not a cassava leaf".
+
+
+## Test with photos outside cassava (14 photos, taken or collected by the author)
+- Photos: other leaves (avocado, banana, mango, papaya, beans), objects (shoe, ball, chair, desk, hand) and soil, water.
+- App result without any "not cassava" check: 4 confident answers (avocado -> Healthy 0.83, banana -> Healthy 0.96,
+  soil -> CMD 0.67, soil1 -> CBSD 0.96), 4 "cannot confirm healthy", 4 "not sure", 2 "retake".
+- Tried a distance check in the model's 1,280-number feature space (Mahalanobis distance to the nearest class average,
+  limit = 99th percentile of validation photos). It rejected only 1 of 14 (water) and 0 of 14 real cassava photos.
+  Mango, papaya, beans and avocado were closer to cassava than the median cassava photo.
+- Conclusion: features trained only to separate cassava diseases do not separate cassava from other plants.
+- Decision: show a visible notice ("This app only checks cassava leaves...") in both languages and report the limitation.
+  Possible future work: a dedicated "not cassava" class trained with photos of other plants, or a general-purpose
+  pretrained model's features. Neither has been tried.

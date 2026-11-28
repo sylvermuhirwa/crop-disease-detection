@@ -17,3 +17,6 @@ data/
 Thumbs.db
 
 demo_photos/
+my_photos/
+
+results/features.npz

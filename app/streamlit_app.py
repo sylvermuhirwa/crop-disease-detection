@@ -29,6 +29,7 @@ ui, adv = text["ui"], text["advice"]
 
 st.title(ui["app_title"])
 st.write(ui["app_subtitle"])
+st.warning(ui["cassava_only"])
 
 # 2. Photo: upload, or take one with the camera
 upload = st.file_uploader(ui["upload"], type=["jpg", "jpeg", "png"])

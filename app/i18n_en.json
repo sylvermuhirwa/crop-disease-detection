@@ -16,7 +16,8 @@
     "heatmap_note": "The red and yellow areas are where the app looked most. This is only a guide.",
     "photo_problem": "Problem with the photo",
     "tips_title": "Tips for a good photo",
-    "footer": "This is a research prototype. It has not been tested with farmers."
+    "footer": "This is a research prototype. It has not been tested with farmers.",
+    "cassava_only": "This app only checks cassava leaves. If your plant is not cassava, ignore the result."
   },
   "advice": {
     "disclaimer": "This app gives a first guess. It can be wrong. It does not replace an extension officer or an expert.",
